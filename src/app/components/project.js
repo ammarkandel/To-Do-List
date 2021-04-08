@@ -1,5 +1,3 @@
-import CheckList from './checkList';
-
 function Project(name, checkList) {
   const projectName = name;
   const list = checkList;
