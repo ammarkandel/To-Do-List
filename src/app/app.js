@@ -1,3 +1,4 @@
-import './components/project';
-import './components/storeProjects';
 import './components/displayProjects';
+import './components/updateProjects';
+import './components/displayLists';
+import './components/updateList';

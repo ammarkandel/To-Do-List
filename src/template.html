@@ -7,7 +7,29 @@
     <title>CheckList</title>
   </head>
   <body>
-    <input type="text" class="input" />
-    <ul class="display-projects"></ul>
+    <div class="content">
+      <div>
+        <form>
+          <input type="text" class="input" />
+          <input type="submit" class="submit" />
+        </form>
+        <ul class="display-projects"></ul>
+      </div>
+
+      <div class="check-lists">
+        <h1 class="project-title"></h1>
+        <form class="list-form">
+          <fieldset>
+            <label>title</label>
+            <input type="text" class="list-title" />
+          </fieldset>
+          <fieldset>
+            <label>description</label>
+            <input type="text" class="list-description" />
+          </fieldset>
+          <input type="submit" class="submit-list" />
+        </form>
+      </div>
+    </div>
   </body>
 </html>

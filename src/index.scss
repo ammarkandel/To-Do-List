@@ -4,7 +4,35 @@
   box-sizing: border-box;
 }
 
+li {
+  list-style-type: none;
+  cursor: pointer;
+}
+
 .navbar {
   height: 80px;
   background-color: black;
+}
+
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.list-form input {
+  display: block;
+}
+
+.list-form fieldset {
+  margin-top: 20px;
+  border: none;
+}
+
+.check-lists {
+  display: none;
+}
+
+input[type="submit"] {
+  cursor: pointer;
 }

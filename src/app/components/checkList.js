@@ -1,7 +1,7 @@
-function CheckList(description, title) {
-  const print_title = title;
-  const print_description = description;
-  return { print_title, print_description }
+function CheckList(title, description) {
+  const printTitle = title;
+  const printDescription = description;
+  return { printTitle, printDescription }
 }
 
 export default CheckList;
