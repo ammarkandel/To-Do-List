@@ -5,30 +5,50 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CheckList</title>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
+    <nav>
+      <div class="logo"><i class="fas fa-check-double"></i> WillDo</div>
+    </nav>
     <div class="content">
-      <div>
-        <form>
+      <div class="all-projects">
+        <h1 class="add-projects">
+          Projects <i class="fas fa-plus-square"></i>
+        </h1>
+        <form id="submit-projects">
           <input type="text" class="input" />
           <input type="submit" class="submit" />
         </form>
         <ul class="display-projects"></ul>
       </div>
 
-      <div class="check-lists">
+      <div id="all-todos">
         <h1 class="project-title"></h1>
-        <form class="list-form">
+        <form id="list-form">
           <fieldset>
-            <label>title</label>
+            <label>Title</label>
             <input type="text" class="list-title" />
           </fieldset>
           <fieldset>
-            <label>description</label>
+            <label>Description</label>
             <input type="text" class="list-description" />
+          </fieldset>
+          <fieldset>
+            <label>Date</label>
+            <input type="date" class="dueDate" />
           </fieldset>
           <input type="submit" class="submit-list" />
         </form>
+        <ul class="display-todos"></ul>
       </div>
     </div>
   </body>

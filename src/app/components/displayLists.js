@@ -1,25 +1,20 @@
-import CheckList from './checkList';
-
-const allChilds = document.querySelector('.display-projects').childNodes;
+const infoBtn = document.getElementsByClassName('fa-info-circle');
 const listTitle = document.querySelector('.project-title');
-const arr = [...allChilds];
 
-for (let i = 0; i < arr.length; i++) {
-  arr[i].addEventListener('click', (e)=> {
-    const checkLists = document.querySelector('.check-lists');
-    listTitle.textContent = e.target.textContent;
+for (let i = 0; i < infoBtn.length; i++) {
+  infoBtn[i].addEventListener('click', ()=> {
+    let belongsToDos = JSON.parse(localStorage.getItem(localStorage.key(i)));
+    const displayTodos = document.querySelector('.display-todos');
+    const targetText = localStorage.key(i);
+    listTitle.textContent = targetText;
+    const AllToDos = document.getElementById('all-todos');
+    AllToDos.style = 'display: block';
+    displayTodos.innerHTML = '';
 
-    checkLists.setAttribute('style', 'display: block');
+    for (let j = 0; j < belongsToDos.length; j++) {
+      const li = document.createElement('li');
+      li.textContent = `Title:: ${belongsToDos[j].title} ||| Description:: ${belongsToDos[j].description} ||| Date:: ${belongsToDos[j].date}`;
+      displayTodos.appendChild(li);
+    }
   });
 }
-
-
-/*
-
-let testt = JSON.parse(localStorage.getItem(e.target.textContent));
-
-testt.push(CheckList('akakak', 'jjjdjdjdjdj'));
-
-localStorage.setItem(e.target.textContent, testt);
-
-*/
