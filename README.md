@@ -1,6 +1,6 @@
 # To-Do-List
 
-## Todo list for users to add their organize their todos
+## Todo list for users to add and organize their todos
 
 ## Users can add projects and its todos
 
