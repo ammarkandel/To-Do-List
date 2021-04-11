@@ -1,4 +1,4 @@
-const deleteProject = document.getElementsByClassName('fa-trash-alt');
+const deleteProject = document.getElementsByClassName('delete-project');
 
 for (let i = 0; i < deleteProject.length; i++) {
   deleteProject[i].addEventListener('click', ()=> {

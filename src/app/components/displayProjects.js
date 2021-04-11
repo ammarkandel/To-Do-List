@@ -13,6 +13,7 @@ for (let i = 0; i < localStorage.length; i++) {
 
   iElRem.classList.add('fas');
   iElRem.classList.add('fa-trash-alt');
+  iElRem.classList.add('delete-project');
   iElInfo.classList.add('fas');
   iElInfo.classList.add('fa-info-circle');
   li.textContent = localStorage.key(i);

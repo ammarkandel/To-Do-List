@@ -20,7 +20,6 @@ nav {
 
 li {
   list-style-type: none;
-  cursor: pointer;
 }
 
 .navbar {
@@ -101,8 +100,21 @@ input[type="text"] {
 .fa-trash-alt,
 .fa-info-circle {
   cursor: pointer;
+  font-size: 1.2rem;
+  margin-top: 1rem;
 }
 
 .fa-info-circle {
   margin-left: 1rem;
+}
+
+.display-todos li {
+  background-color: tomato;
+  margin-top: 5px;
+  padding: 5px;
+  font-weight: 600;
+}
+
+.delete-todo {
+  margin-left: 2rem;
 }

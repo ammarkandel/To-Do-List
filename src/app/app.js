@@ -3,3 +3,4 @@ import './components/updateProjects';
 import './components/displayLists';
 import './components/updateList';
 import './components/deleteProject';
+import './components/deleteTodo';
