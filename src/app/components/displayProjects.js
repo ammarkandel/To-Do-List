@@ -2,11 +2,11 @@ const displayProjects = document.querySelector('.display-projects');
 const addProjectsBtn = document.querySelector('.add-projects');
 const submitProjectsForm = document.getElementById('submit-projects');
 
-addProjectsBtn.addEventListener('click', ()=> {
+addProjectsBtn.addEventListener('click', () => {
   submitProjectsForm.style = 'display: block';
-})
+});
 
-for (let i = 0; i < localStorage.length; i++) {
+for (let i = 0; i < localStorage.length; i =+ 1) {
   const li = document.createElement('li');
   const iElRem = document.createElement('i');
   const iElInfo = document.createElement('i');
