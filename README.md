@@ -2,7 +2,7 @@
 
 ### Live version
 
-[live version](https://simple-restaurant-40.netlify.app/)
+[live version](https://will-do-list.netlify.app/)
 
 ### How to run this project
 
