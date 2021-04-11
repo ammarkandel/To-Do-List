@@ -10,6 +10,6 @@ submitForm.addEventListener('click', () => {
   const getI = projectTitleText.textContent;
   const testt = JSON.parse(localStorage.getItem(getI));
   const check = CheckList(listTitle.value, listDescription.value, listDate.value);
-  testt.push({ title: check.printTitle, description: check.printDescription, date: check.printDate });
+  testt.push({ title: check.printTitle, description: check.printDesc, date: check.printDate });
   localStorage.setItem(getI, JSON.stringify(testt));
 });
