@@ -1,5 +1,11 @@
 # To-Do-List
 
+## Todo list for users to add their organize their todos
+
+## Users can add projects and its todos
+
+## Users can delete projects and its todos
+
 ### Live version
 
 [live version](https://will-do-list.netlify.app/)
