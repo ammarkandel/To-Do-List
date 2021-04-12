@@ -22,7 +22,7 @@ for (let i = 0; i < infoBtn.length; i += 1) {
       const editBtn = document.createElement('button');
 
       editBtn.classList.add('edit-btn');
-      editBtn.textContent = 'Edit'
+      editBtn.textContent = 'Edit';
       rmIcon.classList.add('fas');
       rmIcon.classList.add('fa-trash-alt');
       rmIcon.classList.add('delete-todo');

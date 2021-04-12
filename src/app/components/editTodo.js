@@ -17,12 +17,11 @@ function editTodo(x) {
         todos[i].description = editDescription.value;
         todos[i].date = editDuedate.value;
         localStorage.setItem(localStorage.key(x), JSON.stringify(todos));
-      })
+      });
 
       liToEdit.replaceWith(editForm);
-    })
+    });
   }
-  
 }
 
 export default editTodo;
