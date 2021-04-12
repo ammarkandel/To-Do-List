@@ -106,6 +106,7 @@ input[type="text"] {
 
 .fa-info-circle {
   margin-left: 1rem;
+  cursor: pointer;
 }
 
 .display-todos li {
@@ -117,4 +118,14 @@ input[type="text"] {
 
 .delete-todo {
   margin-left: 2rem;
+}
+
+.edit-btn {
+  cursor: pointer;
+  padding: 2px;
+  font-weight: 600;
+}
+
+#edit-form {
+  display: none;
 }
