@@ -5,3 +5,4 @@ import './components/updateList';
 import './components/deleteProject';
 import './components/deleteTodo';
 import './components/editTodo';
+import './components/priorityAction';

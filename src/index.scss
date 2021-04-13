@@ -116,11 +116,13 @@ input[type="text"] {
   font-weight: 600;
 }
 
-.delete-todo {
+.delete-todo,
+.priority {
   margin-left: 2rem;
 }
 
-.edit-btn {
+.edit-btn,
+.priority {
   cursor: pointer;
   padding: 2px;
   font-weight: 600;
@@ -128,4 +130,8 @@ input[type="text"] {
 
 #edit-form {
   display: none;
+}
+
+.line-through {
+  text-decoration: line-through;
 }
