@@ -3,7 +3,12 @@ function CheckList(title, description, dueDate, priority) {
   const printDesc = description;
   const printDate = dueDate;
   const printPriority = priority;
-  return { printTitle, printDesc, printDate, printPriority };
+  return {
+    printTitle,
+    printDesc,
+    printDate,
+    printPriority
+  };
 }
 
 export default CheckList;

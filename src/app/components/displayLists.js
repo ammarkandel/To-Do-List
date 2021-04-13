@@ -30,7 +30,7 @@ for (let i = 0; i < infoBtn.length; i += 1) {
       rmIcon.classList.add('delete-todo');
       priorityInput.classList.add('priority');
       priorityInput.setAttribute('type', 'checkbox');
-      if (belongsToDos[j].priority == false) {
+      if (belongsToDos[j].priority === false) {
         priorityInput.setAttribute('checked', 'checked');
       }
 
