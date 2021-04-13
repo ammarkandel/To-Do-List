@@ -7,7 +7,7 @@ function CheckList(title, description, dueDate, priority) {
     printTitle,
     printDesc,
     printDate,
-    printPriority
+    printPriority,
   };
 }
 

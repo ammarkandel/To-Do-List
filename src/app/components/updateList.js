@@ -14,7 +14,7 @@ submitForm.addEventListener('click', () => {
     title: check.printTitle,
     description: check.printDesc,
     date: check.printDate,
-    priority: check.printPriority
+    priority: check.printPriority,
   });
   localStorage.setItem(getI, JSON.stringify(testt));
 });
