@@ -7,14 +7,15 @@ const listTitle = document.querySelector('.list-title');
 const listDate = document.querySelector('.dueDate');
 
 submitForm.addEventListener('click', () => {
-  const getI = projectTitleText.textContent;
-  const testt = JSON.parse(localStorage.getItem(getI));
-  const check = CheckList(listTitle.value, listDescription.value, listDate.value, false);
-  testt.push({
-    title: check.printTitle,
-    description: check.printDesc,
-    date: check.printDate,
-    priority: check.printPriority,
-  });
-  localStorage.setItem(getI, JSON.stringify(testt));
+  for (let i = 0; i < localStorage.length; i += 1) {
+    const todosData = JSON.parse(localStorage[localStorage.key(i)]);
+    const check = CheckList(listTitle.value, listDescription.value, listDate.value, true);
+    todosData.push({
+      title: check.printTitle,
+      description: check.printDesc,
+      date: check.printDate,
+      priority: check.printPriority,
+    });
+    localStorage.setItem(localStorage.key(i), JSON.stringify(todosData));
+  }
 });
