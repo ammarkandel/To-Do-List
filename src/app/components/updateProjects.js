@@ -1,16 +1,14 @@
 const submitProjects = document.querySelector('.submit');
+const projectNameVal = document.querySelector('.input');
 
-const lists = [];
-
-window.onload = () => {
-  updateProjects();
-};
+if (localStorage.length === 0) {
+  localStorage.setItem(projectNameVal.value, JSON.stringify([]));
+}
 
 submitProjects.addEventListener('click', () => {
   updateProjects();
 });
 
 const updateProjects = () => {
-  const projectNameVal = document.querySelector('.input');
-  localStorage.setItem(projectNameVal.value, JSON.stringify(lists));
+  localStorage.setItem(projectNameVal.value, JSON.stringify([]));
 };

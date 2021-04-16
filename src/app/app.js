@@ -1,7 +1,7 @@
 import './components/displayProjects';
 import './components/updateProjects';
-import './components/displayLists';
 import './components/updateList';
+import './components/displayLists';
 import './components/deleteProject';
 import './components/deleteTodo';
 import './components/editTodo';
