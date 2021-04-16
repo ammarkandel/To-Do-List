@@ -7,7 +7,7 @@ const listTitle = document.querySelector('.project-title');
 
 for (let i = 0; i < infoBtn.length; i += 1) {
   infoBtn[i].addEventListener('click', () => {
-    let getItem = localStorage.key(i);
+    const getItem = localStorage.key(i);
     const belongsToDos = JSON.parse(localStorage[getItem]);
     const displayTodos = document.querySelector('.display-todos');
     const targetText = localStorage.key(i);

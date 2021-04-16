@@ -1,7 +1,6 @@
 import CheckList from './checkList';
 
 const submitForm = document.querySelector('.submit-list');
-const projectTitleText = document.querySelector('.project-title');
 const listDescription = document.querySelector('.list-description');
 const listTitle = document.querySelector('.list-title');
 const listDate = document.querySelector('.dueDate');
