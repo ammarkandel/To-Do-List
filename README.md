@@ -6,6 +6,8 @@
 
 ## Users can delete projects and its todos
 
+## Users can edit todos and add priority for todos
+
 ### Live version
 
 [live version](https://will-do-list.netlify.app/)
