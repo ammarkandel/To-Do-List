@@ -1,8 +1,8 @@
-import './components/displayProjects';
-import './components/updateProjects';
-import './components/updateList';
-import './components/displayLists';
-import './components/deleteProject';
-import './components/deleteTodo';
-import './components/editTodo';
-import './components/priorityAction';
+import './components/projects/displayProjects';
+import './components/projects/updateProjects';
+import './components/projects/deleteProject';
+import './components/todos/updateList';
+import './components/todos/displayLists';
+import './components/todos/deleteTodo';
+import './components/todos/editTodo';
+import './components/todos/priorityAction';
